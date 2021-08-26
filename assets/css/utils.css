@@ -1,0 +1,24 @@
+.text-10{
+    font-size: 10px;
+}
+
+.text-18{
+    font-size: 18px;
+}
+
+.text-30{
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text-coral{
+    color: coral;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+hr:not([size]) {
+    height: 0.5px;
+}
