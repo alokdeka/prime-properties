@@ -76,7 +76,7 @@ body {
     background: coral !important;
 }
 
-#banner-image img{
+#main-banner-image{
     width: 100%;
     height: 80vh;
     object-fit: cover;
