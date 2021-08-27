@@ -266,44 +266,52 @@
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6 mb-3 project">
                         <img src="assets/images/projects/image1.jpg" alt="" width="100%" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <p class="text-18 fw-bold">
-                                Prime Properties <br />
-                                <span class="text-12">Giwahati, Assam</span>
-                            </p>
-                            <button class="btn btn-dark rounded-0 enquiry-btn" data-value="1">Enquiry</button>
+                        <div class="details">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-18 fw-bold">
+                                    Prime Properties <br />
+                                    <span class="text-12">Giwahati, Assam</span>
+                                </p>
+                                <button class="btn rounded-0 enquiry-btn" data-value="1">Enquiry</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6 mb-3 project">
                         <img src="assets/images/projects/image2.jpg" alt="" width="100%" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <p class="text-18 fw-bold">
-                                Prime Properties <br />
-                                <span class="text-12">Giwahati, Assam</span>
-                            </p>
-                            <button class="btn btn-dark rounded-0 enquiry-btn" data-value="2">Enquiry</button>
+                        <div class="details">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-18 fw-bold">
+                                    Prime Properties <br />
+                                    <span class="text-12">Giwahati, Assam</span>
+                                </p>
+                                <button class="btn rounded-0 enquiry-btn" data-value="2">Enquiry</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6 mb-3 project">
                         <img src="assets/images/projects/image3.jpg" alt="" width="100%" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <p class="text-18 fw-bold">
-                                Prime Properties <br />
-                                <span class="text-12">Giwahati, Assam</span>
-                            </p>
-                            <button class="btn btn-dark rounded-0 enquiry-btn" data-value="3">Enquiry</button>
+                        <div class="details">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-18 fw-bold">
+                                    Prime Properties <br />
+                                    <span class="text-12">Giwahati, Assam</span>
+                                </p>
+                                <button class="btn rounded-0 enquiry-btn" data-value="3">Enquiry</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-3">
+                    <div class="col-md-6 mb-3 project">
                         <img src="assets/images/projects/image4.jpg" alt="" width="100%" />
-                        <div class="d-flex justify-content-between align-items-center">
-                            <p class="text-18 fw-bold">
-                                Prime Properties <br />
-                                <span class="text-12">Giwahati, Assam</span>
-                            </p>
-                            <button class="btn btn-dark rounded-0 enquiry-btn" data-value="4">Enquiry</button>
+                        <div class="details">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <p class="text-18 fw-bold">
+                                    Prime Properties <br />
+                                    <span class="text-12">Giwahati, Assam</span>
+                                </p>
+                                <button class="btn rounded-0 enquiry-btn" data-value="4">Enquiry</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -562,56 +570,68 @@
     </div>
 
 
-    <!-- Side Enquiry form -->
-    <div id="side-enquiry-form-box">
-        <!-- Form -->
-        <div id="right-enquiry-form">
-            <p class="text-30 text-light">Enquiry</p>
-            <form>
-
-                <!-- Select project -->
-                <select class="form-select mb-3" aria-label="Select project" required>
-                    <option selected disabled>Select Projects</option>
-                    <option value="1">Prime Properties 1</option>
-                    <option value="2">Prime Properties 2</option>
-                    <option value="3">Prime Properties 3</option>
-                    <option value="4">Prime Properties 4</option>
-                </select>
-                <!-- Name -->
-                <div class="mb-3">
-                    <input type="name" class="form-control" id="name" name="name" placeholder="Name" required />
+    <!-- Modal -->
+    <div class="modal fade" id="enquiry-form" tabindex="-1" data-bs-backdrop="static"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title text-30">Enquiry</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body">
+                    <!-- Form -->
 
-                <!-- Email -->
-                <div class="mb-3">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
+                    <form>
+
+                        <!-- Select project -->
+                        <select class="rounded-0 form-select mb-3 required" aria-label="Select project" required>
+                            <option selected disabled>Select Projects*</option>
+                            <option value="1">Prime Properties 1</option>
+                            <option value="2">Prime Properties 2</option>
+                            <option value="3">Prime Properties 3</option>
+                            <option value="4">Prime Properties 4</option>
+                        </select>
+                        <!-- Name -->
+                        <div class="mb-3">
+                            <input type="name" class="rounded-0 form-control" id="name" name="name" placeholder="Name*"
+                                required />
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-3">
+                            <input type="email" class="rounded-0 form-control" id="email" name="email"
+                                placeholder="Email*" required />
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="mb-3">
+                            <input type="text" class="rounded-0 form-control" id="phone" name="phone"
+                                placeholder="Phone*" required />
+                        </div>
+
+                        <!-- Months -->
+                        <p class="text-12">When you are planning to buy?*</p>
+                        <div id="month-btn-block" class="d-flex justify-content-evenly">
+                            <button class="btn btn-dark rounded-0 months-btn" data-value="Immediate">Immediate</button>
+                            <button class="btn btn-dark rounded-0 months-btn" data-value="3Months">3
+                                Months</button>
+                            <button class="btn btn-dark rounded-0 months-btn" data-value="MoreThan3Months">More
+                                than
+                                3 months</button>
+                        </div>
+
+
+                        <!-- Send -->
+                        <button type="submit" class="btn btn-danger rounded-0 border-0 form-control mt-3">
+                            Enquiry
+                        </button>
+                    </form>
                 </div>
-
-                <!-- Phone -->
-                <div class="mb-3">
-                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" required />
+                <div class="modal-footer">
                 </div>
-
-                <!-- Months -->
-                <div id="month-btn-block">
-                    <button class="btn btn-dark rounded-0 border-0 months-btn" data-value="Immediate">Immediate</button>
-                    <button class="btn btn-dark rounded-0 border-0 months-btn" data-value="3Months">3
-                        Months</button>
-                    <button class="btn btn-dark rounded-0 border-0 months-btn" data-value="MoreThan3Months">More
-                        than
-                        3 months</button>
-                </div>
-
-
-                <!-- Send -->
-                <button type="submit" class="btn btn-danger rounded-0 border-0 form-control mt-3">
-                    Enquiry
-                </button>
-            </form>
+            </div>
         </div>
-
-        <!-- Close -->
-        <p><i class="fas fa-times pointer text-light" id="close-enquiry"></i></p>
     </div>
 
     <!-- Scripts -->
@@ -674,9 +694,7 @@
 
         $(".enquiry-btn").on('click', function () {
             // alert($(this).data('value'));
-            $('#side-enquiry-form-box').css({
-                'display': 'flex'
-            });
+            $("#enquiry-form").modal('show');
         });
 
         $("#close-enquiry").on('click', function () {

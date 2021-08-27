@@ -8,6 +8,13 @@ body {
     scroll-behavior: smooth;
 }
 
+/* Prevents body movement when modal is open */
+body.modal-open {
+    width: 100% !important;
+    padding-right: 0 !important;
+    overflow-y: scroll !important;
+}
+
 .form-control:focus, .btn:focus, .form-select:focus{
     border-color: #cccccc;
     -webkit-box-shadow: none;
@@ -60,12 +67,12 @@ body {
     color: #111;
 }
 
-#right-enquiry-form select{
+#enquiry-form select{
     height: 38px;
-    color: #fff;
 }
 
 .months-btn{
+    color: #111;
     width: 90px;
     height: 50px;
     font-size: 10px;
@@ -74,6 +81,7 @@ body {
 
 .months-btn:hover, .on-active{
     background: coral !important;
+    border: none
 }
 
 #main-banner-image{
@@ -95,7 +103,7 @@ body {
     transform: translateY(-50%);
 }
 
-::-webkit-input-placeholder, #form select, #right-enquiry-form select {
+::-webkit-input-placeholder, #form select, #enquiry-form select {
     /* Chrome/Opera/Safari */
     font-size: 12px;
     font-weight: 600;
@@ -194,28 +202,47 @@ body {
     margin-top: 30px;
 }
 
-#side-enquiry-form-box{
-    transition: all 0.5s;
-    width: 30vw;
-    height: 100vh;
-    background: #111;
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 999;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#side-enquiry-form-box .fa-times{
-    font-size: 20px;
-    border: 1px solid #fff;
-    padding: 10px 13px;
-    border-radius: 25px;
-}
-
 .enquiry-btn{
     margin-top: -22px;
+    background: coral;
+    color: #fff;
 }
+
+.modal {
+    background: rgba(1, 1, 1, 0.3);
+    position: absolute;
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .modal-content{
+    border-radius: 0;
+  }
+
+  .project{
+      position: relative;
+  }
+  .details::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(1, 1, 1);
+      opacity: 0.7;
+      width: 100%;
+      z-index: -1;
+  }
+
+  .details{
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 95.5%;
+      color: #fff;
+      padding: 20px 20px 5px 20px;
+  }
