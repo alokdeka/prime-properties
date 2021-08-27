@@ -260,33 +260,45 @@
                     </p>
                 </div>
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <img src="assets/images/projects/image1.jpg" alt="" width="100%" />
-                        <p class="text-18 fw-bold">
-                            Prime Properties <br />
-                            <span class="text-10">Giwahati, Assam</span>
-                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-18 fw-bold">
+                                Prime Properties <br />
+                                <span class="text-10">Giwahati, Assam</span>
+                            </p>
+                            <button class="btn btn-dark rounded-0 enquiry-btn" data-value="1">Enquiry</button>
+                        </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <img src="assets/images/projects/image2.jpg" alt="" width="100%" />
-                        <p class="text-18 fw-bold">
-                            Prime Properties <br />
-                            <span class="text-10">Giwahati, Assam</span>
-                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-18 fw-bold">
+                                Prime Properties <br />
+                                <span class="text-10">Giwahati, Assam</span>
+                            </p>
+                            <button class="btn btn-dark rounded-0 enquiry-btn" data-value="2">Enquiry</button>
+                        </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <img src="assets/images/projects/image3.jpg" alt="" width="100%" />
-                        <p class="text-18 fw-bold">
-                            Prime Properties <br />
-                            <span class="text-10">Giwahati, Assam</span>
-                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-18 fw-bold">
+                                Prime Properties <br />
+                                <span class="text-10">Giwahati, Assam</span>
+                            </p>
+                            <button class="btn btn-dark rounded-0 enquiry-btn" data-value="3">Enquiry</button>
+                        </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-3">
                         <img src="assets/images/projects/image4.jpg" alt="" width="100%" />
-                        <p class="text-18 fw-bold">
-                            Prime Properties <br />
-                            <span class="text-10">Giwahati, Assam</span>
-                        </p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p class="text-18 fw-bold">
+                                Prime Properties <br />
+                                <span class="text-10">Giwahati, Assam</span>
+                            </p>
+                            <button class="btn btn-dark rounded-0 enquiry-btn" data-value="4">Enquiry</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -543,6 +555,59 @@
         </div>
     </div>
 
+
+    <!-- Side Enquiry form -->
+    <div id="side-enquiry-form-box">
+        <!-- Form -->
+        <div id="right-enquiry-form">
+            <p class="text-30 text-light">Enquiry</p>
+            <form>
+
+                <!-- Select project -->
+                <select class="form-select mb-3" aria-label="Select project" required>
+                    <option selected disabled>Select Projects</option>
+                    <option value="1">Prime Properties 1</option>
+                    <option value="2">Prime Properties 2</option>
+                    <option value="3">Prime Properties 3</option>
+                    <option value="4">Prime Properties 4</option>
+                </select>
+                <!-- Name -->
+                <div class="mb-3">
+                    <input type="name" class="form-control" id="name" name="name" placeholder="Name" required />
+                </div>
+
+                <!-- Email -->
+                <div class="mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
+                </div>
+
+                <!-- Phone -->
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" required />
+                </div>
+
+                <!-- Months -->
+                <div id="month-btn-block">
+                    <button class="btn btn-dark rounded-0 border-0 months-btn" data-value="Immediate">Immediate</button>
+                    <button class="btn btn-dark rounded-0 border-0 months-btn" data-value="3Months">3
+                        Months</button>
+                    <button class="btn btn-dark rounded-0 border-0 months-btn" data-value="MoreThan3Months">More
+                        than
+                        3 months</button>
+                </div>
+
+
+                <!-- Send -->
+                <button type="submit" class="btn btn-danger rounded-0 border-0 form-control mt-3">
+                    Enquiry
+                </button>
+            </form>
+        </div>
+
+        <!-- Close -->
+        <p><i class="fas fa-times pointer text-light" id="close-enquiry"></i></p>
+    </div>
+
     <!-- Scripts -->
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -590,6 +655,26 @@
                 // settings: "unslick"
                 // instead of a settings object
             ],
+        });
+    </script>
+
+    <script>
+        $('.months-btn').on('click', function (e) {
+            e.preventDefault();
+            $('.months-btn').removeClass('on-active');
+            $(this).addClass('on-active');
+            // alert($(this).data('value'));
+        });
+
+        $(".enquiry-btn").on('click', function () {
+            // alert($(this).data('value'));
+            $('#side-enquiry-form-box').css({
+                'display': 'flex'
+            });
+        });
+
+        $("#close-enquiry").on('click', function () {
+            $("#side-enquiry-form-box").fadeOut(1);
         });
     </script>
 </body>

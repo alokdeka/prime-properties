@@ -8,6 +8,12 @@ body {
     scroll-behavior: smooth;
 }
 
+.form-control:focus, .btn:focus, .form-select:focus{
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
 #top-header{
     width: 100vw;
     height: 2rem;
@@ -41,13 +47,42 @@ body {
     border-radius: 0;
 }
 
+#right-enquiry-form{
+    padding: 40px;
+}
+
+#right-enquiry-form input, #right-enquiry-form select, #right-enquiry-form textarea{
+    border-radius: 0;
+    background: transparent;
+}
+
+#right-enquiry-form select option{
+    color: #111;
+}
+
+#right-enquiry-form select{
+    height: 38px;
+    color: #fff;
+}
+
+.months-btn{
+    width: 90px;
+    height: 50px;
+    font-size: 10px;
+    background: transparent;
+}
+
+.months-btn:hover, .on-active{
+    background: coral !important;
+}
+
 #banner-image img{
     width: 100%;
     height: 80vh;
     object-fit: cover
 }
 
-::-webkit-input-placeholder, #form select {
+::-webkit-input-placeholder, #form select, #right-enquiry-form select {
     /* Chrome/Opera/Safari */
     font-size: 12px;
     font-weight: 600;
@@ -60,6 +95,10 @@ body {
 
 #features-block{
     background: rgb(252, 249, 249);
+}
+
+#features-block .col-md-3{
+    text-align: center;
 }
 
 #background{
@@ -140,4 +179,30 @@ body {
 
 .slider{
     margin-top: 30px;
+}
+
+#side-enquiry-form-box{
+    transition: all 0.5s;
+    width: 30vw;
+    height: 100vh;
+    background: #111;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#side-enquiry-form-box .fa-times{
+    font-size: 20px;
+    border: 1px solid #fff;
+    padding: 10px 13px;
+    border-radius: 25px;
+}
+
+.enquiry-btn{
+    margin-top: -22px;
 }
