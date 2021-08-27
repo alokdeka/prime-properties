@@ -1,7 +1,7 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
     #top-header{
-        height: 6rem;
+        height: 4rem;
         display: flex;
         justify-content: center;
         align-items: center;
