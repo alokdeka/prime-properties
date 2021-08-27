@@ -35,14 +35,8 @@
     #project-heading{
         flex-direction: column;
     }
-    #testimonials-background-image{
-        display: none;
-    }
     #testimonials-header{
         position: unset;
-    }
-    #testimonials-header .text-light{
-        color: #111 !important;
     }
     .testimonial-slider{
         flex-direction: column;

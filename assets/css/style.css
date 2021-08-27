@@ -29,8 +29,12 @@ body {
     padding: 0 30px;
     padding-top: 10px;
 }
+
 #form{
     padding: 40px;
+}
+#form select{
+    height: 38px;
 }
 
 #form input, #form select, #form textarea, #form button{
@@ -95,17 +99,10 @@ body {
 }
 
 #testimonials-background{
-    position: relative;
-}
-
-#testimonials-header{
-    position: absolute;
-    top: 10px;
-    left: 30px;
+    background-image: url("../images/testimonials/banner-3.jpg");
 }
 
 .testimonial-block{
-    background: #fff;
     margin-right: 10px;
 }
 
@@ -134,4 +131,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Slick slider */
+.slick-prev:before, .slick-next:before {
+    color: coral;
+}
+
+.slider{
+    margin-top: 30px;
 }
