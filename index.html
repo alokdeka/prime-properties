@@ -15,10 +15,15 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Slick slider -->
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css">
+    <link rel="stylesheet" href="assets/plugins/slick/slick-theme.css">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/utils.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+
     <title>PRIME PROPERTIES | HOME</title>
 </head>
 
@@ -76,21 +81,24 @@
                         <form>
                             <!-- Name -->
                             <div class="mb-3">
-                                <input type="name" class="form-control" id="name" name="name" placeholder="Name">
+                                <input type="name" class="form-control" id="name" name="name" placeholder="Name"
+                                    required>
                             </div>
 
                             <!-- Email -->
                             <div class="mb-3">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                    required>
                             </div>
 
                             <!-- Phone -->
                             <div class="mb-3">
-                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone">
+                                <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone"
+                                    required>
                             </div>
 
                             <!-- Select project -->
-                            <select class="form-select mb-3" aria-label="Select project">
+                            <select class="form-select mb-3" aria-label="Select project" required>
                                 <option selected>Select Projects</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -100,7 +108,7 @@
                             <!-- Any queries -->
                             <div class="mb-3">
                                 <textarea class="form-control" id="query" name="query" rows="2"
-                                    placeholder="Any Queries"></textarea>
+                                    placeholder="Any Queries" required></textarea>
                             </div>
 
                             <!-- Send -->
@@ -391,45 +399,46 @@
                 width="100%">
             <div class="container">
                 <div class="col-md-4" id="testimonials-header">
-                    <p class="text-30 text-light">See What,s Our Client
+                    <p class="text-30 text-light">See What's Our Client
                         Says About Us</p>
                 </div>
             </div>
 
             <!-- Testimonials -->
-            <div class="container testimonial-slider">
+            <div class="container col-md-12 mx-auto ">
+                <div class="testimonial-slider">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-block p-4">
+                        <div class="pic d-flex justify-content-start align-items-center">
+                            <img src="assets/images/testimonials/avatar.png" alt="Avatar" width="50">
+                            <div class="name mt-3 ms-3">
+                                <p><span class="fw-bold">Rajdeep Das</span><br><span class="text-10"> CEO </span></p>
+                            </div>
+                        </div>
 
-                <!-- Testimonial 1 -->
-                <div class="col-md-5 testimonial-block p-4 shadow-sm">
-                    <div class="pic d-flex justify-content-start align-items-center">
-                        <img src="assets/images/testimonials/avatar.png" alt="Avatar" width="50">
-                        <div class="name mt-3 ms-3">
-                            <p><span class="fw-bold">Rajdeep Das</span><br><span class="text-10"> CEO </span></p>
+                        <!-- Message -->
+                        <div id="feedback">
+                            <p class="text-10">Precious ipsum dolor sit amet consectetur adipisicing elit, sed dos mod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min
+                                veniam, quis nostrud Precious ips um dolor sit amet, consecte</p>
                         </div>
                     </div>
 
-                    <!-- Message -->
-                    <div id="feedback">
-                        <p class="text-10">Precious ipsum dolor sit amet consectetur adipisicing elit, sed dos mod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min
-                            veniam, quis nostrud Precious ips um dolor sit amet, consecte</p>
-                    </div>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="col-md-5 testimonial-block p-4 shadow-sm">
-                    <div class="pic d-flex justify-content-start align-items-center">
-                        <img src="assets/images/testimonials/avatar.png" alt="Avatar" width="50">
-                        <div class="name mt-3 ms-3">
-                            <p><span class="fw-bold">Rajdeep Das</span><br><span class="text-10"> CEO </span></p>
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-block p-4">
+                        <div class="pic d-flex justify-content-start align-items-center">
+                            <img src="assets/images/testimonials/avatar.png" alt="Avatar" width="50">
+                            <div class="name mt-3 ms-3">
+                                <p><span class="fw-bold">Rajdeep Das</span><br><span class="text-10"> CEO </span></p>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- Message -->
-                    <div id="feedback">
-                        <p class="text-10">Precious ipsum dolor sit amet consectetur adipisicing elit, sed dos mod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min
-                            veniam, quis nostrud Precious ips um dolor sit amet, consecte</p>
+                        <!-- Message -->
+                        <div id="feedback">
+                            <p class="text-10">Precious ipsum dolor sit amet consectetur adipisicing elit, sed dos mod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min
+                                veniam, quis nostrud Precious ips um dolor sit amet, consecte</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -480,8 +489,53 @@
     </div>
 
     <!-- Scripts -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+
+    <!-- Slick slider -->
+    <script src="assets/plugins/slick/slick.min.js"></script>
+
+    <script>
+        $('.testimonial-slider').slick({
+            dots: true,
+            infinite: true,
+            autoplay: false,
+            autoplaySpeed: 1000,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+        });
     </script>
 
 </body>
