@@ -46,7 +46,7 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-    #top-header{
+    /* #top-header{
         height: 4rem;
     }
 
@@ -89,7 +89,7 @@
 
     #aminities .col-md-3{
         width: 50%;
-    }
+    } */
 }
 
 /* Large devices (desktops, 992px and up) */
