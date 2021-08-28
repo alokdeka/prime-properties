@@ -77,6 +77,8 @@ body.modal-open {
     height: 50px;
     font-size: 13px;
     background: transparent;
+    border: none;
+    border: 0.1px solid #e0e0e0;
 }
 
 .months-btn:hover, .on-active{
