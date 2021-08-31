@@ -51,6 +51,10 @@
         align-items: center;
     }
 
+    #main-banner-image{
+        height: 60vh;
+    }
+
     .details{
         width: 94%;
     }

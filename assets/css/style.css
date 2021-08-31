@@ -95,14 +95,15 @@ body.modal-open {
     width: 100%;
     height: 80vh;
     object-fit: cover;
-    opacity: 0.7;
+    /* opacity: 0.7; */
 }
 
 #banner-image{
     position: relative;
 }
 
-#banner-image::after{
+/* Image overlay */
+/* #banner-image::after{
     content: '';
     position: absolute;
     width: 100%; 
@@ -111,7 +112,7 @@ body.modal-open {
     left:0;
     background: #111;
     opacity: 0.6;
-}
+} */
 
 .banner-caption{
     position: absolute;
