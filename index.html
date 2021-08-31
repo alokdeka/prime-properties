@@ -128,12 +128,13 @@
             <!-- Right image -->
             <div class="col-md-8">
                 <div id="banner-image">
-                    <img src="assets/images/banner/banner-1.png" id="main-banner-image" alt="" />
+                    <img src="assets/images/banner/banner.jpeg" id="main-banner-image" alt="" />
                     <div class="banner-caption text-center">
                         <img src="assets/images/logo/logo.PNG" class="mx-auto d-sm-none d-block" alt="Logo"
                             width="150" />
                         <h2 class="text-center fw-bold text-coral text-uppercase">Prime properties</h2>
-                        <p class="text-center text-18">Blended with Modern Amenities, Prime Location, Affordable
+                        <p class="text-center text-18 text-light">Blended with Modern Amenities, Prime Location,
+                            Affordable
                             Budget
                         </p>
                     </div>
@@ -536,6 +537,22 @@
     </div>
 
 
+    <!-- Floating buttons -->
+    <div id="floating-button" class="d-md-none">
+        <div class="container">
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-6 height-50 flex-center border-right"><i
+                            class="fas fa-phone-alt text-light me-2"></i>
+                        <a class="text-decoration-none text-light" href="tel:+919864125580">Call</a></div>
+                    <div class="col-6 height-50 flex-center" id="enquire-float-btn"><i
+                            class="fas fa-share-square text-light me-2"></i>Enquire
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal -->
     <div class="modal fade" id="enquiry-form" tabindex="-1" data-bs-backdrop="static"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -660,6 +677,13 @@
         });
 
         $(".enquiry-btn").on('click', function () {
+            // alert($(this).data('value'));
+            $("#enquiry-form").modal('show');
+        });
+
+
+        // Floaing enquiry button
+        $("#enquire-float-btn").on('click', function () {
             // alert($(this).data('value'));
             $("#enquiry-form").modal('show');
         });

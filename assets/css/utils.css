@@ -27,3 +27,17 @@
 hr:not([size]) {
     height: 0.5px;
 }
+
+.border-right{
+    border-right: 1px solid #fff;
+}
+
+.height-50{
+    height: 50px;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
