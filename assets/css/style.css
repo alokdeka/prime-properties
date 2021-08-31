@@ -8,6 +8,11 @@ body {
     scroll-behavior: smooth;
 }
 
+:root {
+    --primary-color: #FF351F;
+  }
+  
+
 /* Prevents body movement when modal is open */
 body.modal-open {
     width: 100% !important;
@@ -82,7 +87,7 @@ body.modal-open {
 }
 
 .months-btn:hover, .on-active{
-    background: coral !important;
+    background: var(--primary-color) !important;
     border: none
 }
 
@@ -104,7 +109,8 @@ body.modal-open {
     height:100%;
     top:0; 
     left:0;
-    background:rgba(0,0,0,0.4);
+    background: #111;
+    opacity: 0.6;
 }
 
 .banner-caption{
@@ -123,7 +129,7 @@ body.modal-open {
 }
 
 #form button{
-    background: coral;
+    background: var(--primary-color);
     border: 0;
 }
 
@@ -159,7 +165,7 @@ body.modal-open {
 }
 
 .number-heading{
-    color: coral;
+    color: var(--primary-color);
 }
 
 #project-heading .number-heading{
@@ -197,7 +203,7 @@ body.modal-open {
 }
 
 .orange-icon{
-    color: coral;
+    color: var(--primary-color);
 }
 
 #footer1, .socials{
@@ -208,7 +214,7 @@ body.modal-open {
 
 /* Slick slider */
 .slick-prev:before, .slick-next:before {
-    color: coral;
+    color: var(--primary-color);
 }
 
 .slider{
@@ -217,7 +223,7 @@ body.modal-open {
 
 .enquiry-btn{
     margin-top: -22px;
-    background: coral;
+    background: var(--primary-color);
     color: #fff;
 }
 
